@@ -1,9 +1,9 @@
 # 📆 Hadoop-wordCount
 
-##📝 개요
+## 📝 개요
 wordCount는 MapReduce 프로그래밍 일종으로 데이터를 <key,value>쌍으로 변환하여 처리하는 프로그래밍입니다.
 
-##📂 MapReduce input/output
+## 📂 MapReduce input/output
 - 데이터 모델
 1) map의 입력과 출력, reduce의 입력과 출력 레코드 모두 <key,value>
 2) 키와 밸류로 구성된 데이터를 입력받아 가공/분류한 후, 새로운 키와 밸류로 구성된 목록을 출력
@@ -15,7 +15,7 @@ map : <k1,v1> -> list(<k2,v2>)
 reduce : <k2,list(v2)> -> <k3,v3> or list(<k3,v3>)
 ~~~
 
-##📂 WordCount
+## 📂 WordCount
 - 주어진 입력 파일들에 있는 텍스트를 단어별로 빈도수를 계산하는 프로그램
 ![wordCount recorde](./image/wordcount.png)
 
@@ -26,10 +26,10 @@ reduce : <k2,list(v2)> -> <k3,v3> or list(<k3,v3>)
 3) 리듀스 단계
 <word,빈도수 리스트>를 입력받아 <word, 빈도수 합계>를 출력
 
-##🖌 동작 예제
+## 🖌 동작 예제
 ![wordCount processing](./image/wordcount2.png)
 
-##📝 MapReduce framwork data flow
+## 📝 MapReduce framwork data flow
 1) map phase
 - 대용량 입력 데이터 파일을 입력 스플릿 조각으로 분리
 - 스플릿별로 하나의 맵 테스크가 생성
